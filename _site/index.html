@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ironing</title>
+    <meta name="description" content="ICRA 2016
+  ">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="http://fonts.googleapis.com/css?family=Share+Tech:regular,bold" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+
+<div class="container">
+<div class="row">
+  <div id="stages-carousel" class="carousel slide col-md-9" data-ride="carousel" data-interval="">
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item" id="recognition-case">
+        <div class="page-header">
+            <h2>Real-time Pose Estimation of Deformable Objects
+Using a Volumetric Approach</h2>
+            <p>Yinxiao Li, Yan Wang, Michael Case, Shih-Fu Chang, Peter K. Allen</p>
+        </div>
+        <div class="carousel-workflow">
+          <img src="img/recognition_workflow.png" alt="">
+        </div>
+        <div class="carousel-content">
+          <hr>
+          <h3>Abstract</h3>
+          <div class="paper-video"><iframe width="546" height="410" src="https://www.youtube.com/embed/awhaJ_jcjnE" frameborder="0" allowfullscreen></iframe></div>
+
+            <p>
+              Pose estimation of deformable objects is a fundamental
+              and challenging problem in robotics. We present a novel
+              solution to this problem by first reconstructing a 3D model
+              of the object from a low-cost depth sensor such as Kinect,
+              and then searching a database of simulated models in different
+              poses to predict the pose. Given noisy depth images from 360-
+              degree views of the target object acquired from the Kinect
+              sensor, we reconstruct a smooth 3D model of the object using
+              depth image segmentation and volumetric fusion. Then with an
+              efficient feature extraction and matching scheme, we search the
+              database, which contains a large number of deformable objects
+              in different poses, to obtain the most similar model, whose
+              pose is then adopted as the prediction. Extensive experiments
+              demonstrate better accuracy and orders of magnitude speedup
+              compared to our previous work. An additional benefit of
+              our method is that it produces a high-quality mesh model
+              and camera pose, which is necessary for other tasks such as
+              regrasping and object manipulation.
+            </p>
+            <hr>
+            <h3>Links</h3>
+            <p>[arXiv] [slides] [video] [bibtex]</p>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="item" id="unfolding-case">
+        <div class="page-header">
+            <h2>Recognition, Regrasping, and Unfolding of Deformable Objects
+Using Predictive Thin Shell Modeling</h2>
+            <p>Yinxiao Li, Danfei Xu, Yonghao Yue, Yan Wang, Shih-Fu Changy, Eitan Grinspun, Peter K. Allen</p>
+        </div>
+        <div class="carousel-workflow">
+          <img src="img/unfolding_workflow.png" alt="">
+        </div>
+        <div class="carousel-content">
+          <hr>
+          <h3>Abstract</h3>
+          <div class="paper-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/osZym_6N7j8" frameborder="0" allowfullscreen></iframe></div>
+
+            <p>
+              Deformable objects such as garments are highly
+              unstructured, making them difficult to recognize and manipulate.
+              In this paper, we propose a novel method to teach a twoarm
+              robot to efficiently track the states of a garment from an
+              unknown state to a known state by iterative regrasping. The
+              problem is formulated as a constrained weighted evaluation
+              metric for evaluating the two desired grasping points during
+              regrasping, which can also be used for a convergence criterion
+              The result is then adopted as an estimation to initialize
+              a regrasping, which is then considered as a new state for
+              evaluation. The process stops when the predicted thin shell
+              conclusively agrees with reconstruction. We show experimental
+              results for regrasping a number of different garments including
+              sweater, knitwear, pants, and leggings, etc.</p>
+            <hr>
+            <h3>Links</h3>
+            <p>[arXiv] [slides] [video] [bibtex]</p>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="item active" id="ironing-case">
+        <div class="page-header">
+            <h1>Multi-Sensor Surface Analysis For Robotic Ironing</h1>
+            <p><a href="http://www.cs.columbia.edu/~yli">Yinxiao Li</a>, <a href="http://huxiuhan.com">Xiuhan Hu</a>, Danfei Xu, Yonghao Yue, Eitan Grinspun, and Peter K. Allen</p>
+        </div>
+        <div class="carousel-workflow">
+          <img src="img/ironing_workflow.png" alt="">
+        </div>
+        <div class="carousel-content">
+          <hr>
+          <h3>Abstract</h3>
+          <div class="paper-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/xwLBd8C2bDY" frameborder="0" allowfullscreen></iframe></div>
+
+            <p>
+              Robotic manipulation of deformable objects remains
+              a challenging task. One such task is to iron a piece of
+              cloth autonomously. Given a roughly flattened cloth, the goal
+              is to have an ironing plan that can iteratively apply a regular
+              iron to remove all the major wrinkles by a robot. We present a
+              novel solution to analyze the cloth surface by fusing two surface
+              scan techniques: a curvature scan and a discontinuity scan. The
+              curvature scan can estimate the height deviation of the cloth
+              surface, while the discontinuity scan can effectively detect sharp
+              surface features, such as wrinkles. We use this information to
+              detect the regions that need to be pulled and extended before
+              ironing, and the other regions where we want to detect wrinkles
+              and apply ironing to remove the wrinkles. We demonstrate
+              that our hybrid scan technique is able to capture and classify
+              wrinkles over the surface robustly. Given detected wrinkles, we
+              enable a robot to iron them using shape features. Experimental
+              results show that using our wrinkle analysis algorithm, our
+              robot is able to iron the cloth surface and effectively remove
+              the wrinkles.
+            </p>
+            <hr>
+            <h3>Links</h3>
+            <p>[arXiv] [slides] [video] [bibtex]</p>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="item" id="folding-case">
+        <div class="page-header">
+            <h2>Recognition, Regrasping, and Unfolding of Deformable Objects
+Using Predictive Thin Shell Modeling</h2>
+            <p>Yinxiao Li, Danfei Xu, Yonghao Yue, Yan Wang, Shih-Fu Changy, Eitan Grinspun, Peter K. Allen</p>
+        </div>
+        <div class="carousel-workflow">
+          <img src="img/folding_workflow.png" alt="">
+        </div>
+        <div class="carousel-content">
+          <hr>
+          <h3>Abstract</h3>
+          <div class="paper-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/L4vuAUgeINI" frameborder="0" allowfullscreen></iframe></div>
+
+            <p>
+              Deformable objects such as garments are highly
+              unstructured, making them difficult to recognize and manipulate.
+              In this paper, we propose a novel method to teach a twoarm
+              robot to efficiently track the states of a garment from an
+              unknown state to a known state by iterative regrasping. The
+              problem is formulated as a constrained weighted evaluation
+              metric for evaluating the two desired grasping points during
+              regrasping, which can also be used for a convergence criterion
+              The result is then adopted as an estimation to initialize
+              a regrasping, which is then considered as a new state for
+              evaluation. The process stops when the predicted thin shell
+              conclusively agrees with reconstruction. We show experimental
+              results for regrasping a number of different garments including
+              sweater, knitwear, pants, and leggings, etc.
+            </p>
+            <hr>
+            <h3>Links</h3>
+            <p>[arXiv] [slides] [video] [bibtex]</p>
+
+          <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <div id="stage-selectors" class="col-md-3">
+    <ol>
+      <li data-target="#stages-carousel" data-slide-to="0" class="stage stage-recognition"><h3 class="stage-mask">Recognition</h3></li>
+      <li data-target="#stages-carousel" data-slide-to="1" class="stage stage-unfolding"><h3 class="stage-mask">Unfolding</h3></li>
+      <li data-target="#stages-carousel" data-slide-to="2" class="active stage stage-ironing"><h3 class="stage-mask">Ironing</h3></li>
+      <li data-target="#stages-carousel" data-slide-to="3" class="stage stage-folding"><h3 class="stage-mask">Folding</h3></li>
+
+    </ol>
+
+  </div>
+
+</div>
+</div>
+
+<footer class="row">
+  <div class="container">
+    <p class="text-center col-md-9">
+      <a href="www.columbia.edu"><img src="img/columbia.png"></a>
+    </p>
+  </div>
+</footer>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-2.0.3.min.js"%3E%3C/script%3E'))</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+  </body>
+
+</html>
