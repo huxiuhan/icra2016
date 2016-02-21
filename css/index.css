@@ -114,3 +114,8 @@ h1,h2,h3 {
 .stage-folding {
   background: url(../img/folding.png);
 }
+
+.copyright {
+  font-size: 0.6em;
+  float: right;
+}
