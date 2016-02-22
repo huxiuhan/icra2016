@@ -65,9 +65,9 @@ Using a Volumetric Approach</h2>
       </div>
       <div class="item" id="unfolding-case">
         <div class="page-header">
-            <h2>Recognition, Regrasping, and Unfolding of Deformable Objects
+            <h2>Regrasping and Unfolding of Deformable Garments
 Using Predictive Thin Shell Modeling</h2>
-            <p>Yinxiao Li, Danfei Xu, Yonghao Yue, Yan Wang, Shih-Fu Changy, Eitan Grinspun, Peter K. Allen</p>
+            <p>Yinxiao Li, Danfei Xu, Yonghao Yue, Yan Wang, Shih-Fu Chang, Eitan Grinspun, Peter K. Allen</p>
         </div>
         <div class="carousel-workflow">
           <img src="img/unfolding_workflow.png" alt="">
@@ -102,7 +102,7 @@ Using Predictive Thin Shell Modeling</h2>
       <div class="item active" id="ironing-case">
         <div class="page-header">
             <h1>Multi-Sensor Surface Analysis For Robotic Ironing</h1>
-            <p><a href="http://www.cs.columbia.edu/~yli">Yinxiao Li</a>, <a href="http://huxiuhan.com">Xiuhan Hu</a>, Danfei Xu, Yonghao Yue, Eitan Grinspun, and Peter K. Allen</p>
+            <p><a href="http://www.cs.columbia.edu/~yli">Yinxiao Li</a>, <a href="http://huxiuhan.com">Xiuhan Hu</a>, Danfei Xu, Yonghao Yue, Eitan Grinspun, Peter K. Allen</p>
         </div>
         <div class="carousel-workflow">
           <img src="img/ironing_workflow.png" alt="">
@@ -142,8 +142,8 @@ Using Predictive Thin Shell Modeling</h2>
       </div>
       <div class="item" id="folding-case">
         <div class="page-header">
-            <h2>Recognition, Regrasping, and Unfolding of Deformable Objects
-Using Predictive Thin Shell Modeling</h2>
+            <h2>Folding Deformable Objects using Predictive Simulation and 
+			Trajectory Optimization</h2>
             <p>Yinxiao Li, Danfei Xu, Yonghao Yue, Yan Wang, Shih-Fu Chang, Eitan Grinspun, Peter K. Allen</p>
         </div>
         <div class="carousel-workflow">
@@ -155,25 +155,27 @@ Using Predictive Thin Shell Modeling</h2>
           <div class="paper-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/L4vuAUgeINI" frameborder="0" allowfullscreen></iframe></div>
 
             <p>
-              Deformable objects such as garments are highly
-              unstructured, making them difficult to recognize and manipulate.
-              In this paper, we propose a novel method to teach a two-arm
-              robot to efficiently track the states of a garment from an
-              unknown state to a known state by iterative regrasping. The
-              problem is formulated as a constrained weighted evaluation
-              metric for evaluating the two desired grasping points during
-              regrasping, which can also be used for a convergence criterion
-              The result is then adopted as an estimation to initialize
-              a regrasping, which is then considered as a new state for
-              evaluation. The process stops when the predicted thin shell
-              conclusively agrees with reconstruction. We show experimental
-              results for regrasping a number of different garments including
-              sweater, knitwear, pants, and leggings, etc.
-            </p>
+              Robotic manipulation of deformable objects remains a challenging 
+				task. One such task is folding a garment autonomously. Given 
+				start and end folding positions, what is an optimal trajectory 
+				to move the robotic arm to fold a garment? Certain trajectories 
+				will cause the garment to move, creating wrinkles, and gaps, 
+				other trajectories will fail altogether. We present a novel 
+				solution to find an optimal trajectory that avoids such 
+				problematic scenarios. The trajectory is optimized by minimizing 
+				a quadratic objective function in an off-line simulator, which 
+				includes material properties of the garment and frictional force 
+				on the table. The function measures the dissimilarity between a 
+				user specified folded shape and the folded garment in 
+				simulation, which is then used as an error measurement to create 
+				an optimal rajectory. We demonstrate that our two-arm robot can 
+				follow the optimized trajectories, achieving accurate and 
+				efficient manipulations of deformable objects.</p>
             <hr>
             <h3>Links</h3>
             <p>[<a href="http://www.cs.columbia.edu/~yli/papers/YLI_IROS2015_Final.pdf">arXiv</a>] 
-			[<a href="http://www.cs.columbia.edu/~yli/IROS2015/slides_iros2015.pdf">slides</a>] [<a href="http://www.cs.columbia.edu/~yli/papers/bibtex/IROS2015.txt">bibtex</a>]</p>
+			[<a href="http://www.cs.columbia.edu/~yli/IROS2015/slides_iros2015.pdf">slides</a>] [<a href="http://www.cs.columbia.edu/~yli/papers/bibtex/IROS2015.txt">bibtex</a>] 
+			[<a href="https://github.com/Yinxiaoli/iros2015_folding">source code</a>]</p>
 
           <div class="clearfix"></div>
         </div>
