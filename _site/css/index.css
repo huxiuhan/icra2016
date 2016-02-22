@@ -35,7 +35,7 @@ h1,h2,h3 {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 1300px;
+  margin-bottom: 20px;
 }
 .paper-video {
   float: right;
@@ -117,5 +117,7 @@ h1,h2,h3 {
 
 .copyright {
   font-size: 0.6em;
-  float: right;
+}
+.copyright img {
+  width: 100%;
 }
